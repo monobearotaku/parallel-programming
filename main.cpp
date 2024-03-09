@@ -11,7 +11,11 @@
 int main() {
     srand(time(NULL));
 
-    Matrix a = Matrix(1000);
+    int n = 0;
+
+    std::cin >> n;
+
+    Matrix a = Matrix(n);
     a.SetRandom();
     // std::cout<<a;
 
@@ -34,8 +38,15 @@ int main() {
 
     // std::cout<<b;
 
-
+    //
+    // Matrix a = Matrix(5);
+    // a.SetRandom();
+    // std::cout<<a;
+    //
+    // Matrix b = inverse(a);
+    // std::cout<<b;
+    //
+    //
     // Matrix c = production(a, b);
     // std::cout<<c;
-
 }
