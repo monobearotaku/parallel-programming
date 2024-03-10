@@ -5,8 +5,8 @@
 #include <chrono>
 #include <ctime>
 
-#include "../matrix/matrix.h"
-#include "operations.h"
+#include "matrix/matrix.h"
+#include "operations/operations.h"
 
 int main() {
     srand(time(nullptr));
