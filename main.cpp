@@ -9,7 +9,7 @@
 #include "operations.h"
 
 int main() {
-    srand(time(NULL));
+    srand(time(nullptr));
 
     int n = 0;
 
@@ -17,7 +17,6 @@ int main() {
 
     Matrix a = Matrix(n);
     a.SetRandom();
-    // std::cout<<a;
 
     auto start = std::chrono::high_resolution_clock::now();
     Matrix b = inverse(a);
@@ -32,21 +31,4 @@ int main() {
 
         std::cout<<"Parallell "<<i<<" threads: "<<std::chrono::duration_cast<std::chrono::milliseconds>(stop - start).count()<<std::endl;
     }
-
-
-
-
-    // std::cout<<b;
-
-    //
-    // Matrix a = Matrix(5);
-    // a.SetRandom();
-    // std::cout<<a;
-    //
-    // Matrix b = inverse(a);
-    // std::cout<<b;
-    //
-    //
-    // Matrix c = production(a, b);
-    // std::cout<<c;
 }
