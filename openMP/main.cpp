@@ -5,7 +5,7 @@
 #include <chrono>
 #include <ctime>
 
-#include "matrix.h"
+#include "../matrix/matrix.h"
 #include "operations.h"
 
 int main() {
@@ -13,6 +13,7 @@ int main() {
 
     int n = 0;
 
+    std::cout << "Please provide size of matrix: ";
     std::cin >> n;
 
     Matrix a = Matrix(n);

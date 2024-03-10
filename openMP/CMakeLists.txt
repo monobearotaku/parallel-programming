@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(openMP)
+project(.)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -18,8 +18,8 @@ if (MPI_FOUND)
 endif()
 
 add_executable(openMP main.cpp
-        matrix.cpp
-        matrix.h
+        ../matrix/matrix.cpp
+        ../matrix/matrix.h
         operations.cpp
         operations.h
 )

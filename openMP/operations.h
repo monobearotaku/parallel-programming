@@ -6,7 +6,7 @@
 #define OPERATIONS_H
 
 #include <omp.h>
-#include "matrix.h"
+#include "../matrix/matrix.h"
 
 Matrix inverse(const Matrix& m);
 Matrix inverse_parallel(const Matrix& m, int threads);
